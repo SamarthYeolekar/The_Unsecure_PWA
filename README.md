@@ -114,7 +114,7 @@ To support students first understanding specific security vulnerabilities and pr
 - [Encrypting passwords](.student_resources/encrypting_passwords/README.md).
 - [Exception management](.student_resources/defensive_data_handling/README.md#exception-handling).
 - [Defensive data handling](.student_resources/defensive_data_handling/README.md).
-- [Invalid forward and redirect](.student_resources/invalid_forward_and_redirect/README.md).
+- [Invalid forwards and redirects](.student_resources/invalid_forwards_and_redirects/README.md).
 - [Race conditions](.student_resources/race_conditions).
 - [Secure input form attributes](.student_resources/secure_form_attributes/README.md).
 - [SQL injection](.student_resources/SQL_Injection/README.md).
