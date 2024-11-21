@@ -4,7 +4,7 @@ Invalid (or unvalidated) forwards and redirects are a form of user-controlled in
 
 This vulnerability is often combined with a CSRF, man in the middle or website spoofing as a more complex threat vector.
 
-```HTTP
+```text
 https://www.trustedwebsite.com/examples/example.php?url=http://www.malicious.com
 ```
 
