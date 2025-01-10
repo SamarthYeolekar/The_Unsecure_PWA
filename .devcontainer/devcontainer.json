@@ -47,7 +47,8 @@
         "yahyabatulu.vscode-markdown-alert",
         "bierner.markdown-preview-github-styles",
         "mechatroner.rainbow-csv",
-        "ms-python.pylint"
+        "ms-python.pylint",
+        "ms-python.vscode-python-envs"
       ]
     }
   },

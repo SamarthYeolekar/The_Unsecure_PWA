@@ -29,11 +29,12 @@ You are to run a range of security tests and scans along with a white/grey/black
 Sandboxing creates a safe place to install or execute a program, particularly a suspicious one, without exposing the rest of your system or network. It keeps the code contained in a test environment, so it can't change the state of the host machine, operating system or networked resources. Simple-to-use sandbox environments for Python Flask are listed below, and the UI should be accessed from the latest version of a secure browser such as Chromium or Edge.
 
 - [GitHub Codespaces](https://github.com/features/codespace)
-- [CodeSandbox.io](https://codesandbox.io/) note: CodeSandbox.io requires manual configuration of the VM after deploying the template
-- [Docker Container](https://code.visualstudio.com/docs/devcontainers/containers)
+- [CodeSandbox.io](https://codesandbox.io/)\*
+- [Docker Container](https://code.visualstudio.com/docs/devcontainers/containers)\*
 
-> [!Important]
-> **The Unsecure PWA includes the [.codesandbox](.codesandbox), [.devcontainer](.devcontainer) and [.vscode](.vscode) to auto-configure all the above sandboxes.**
+\* Requires further configuration
+
+> [!Important] > **The Unsecure PWA includes the [.codesandbox](.codesandbox), [.devcontainer](.devcontainer) and [.vscode](.vscode) to auto-configure all the above sandboxes.**
 
 Other Sandbox options:
 
