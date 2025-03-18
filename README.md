@@ -34,7 +34,8 @@ Sandboxing creates a safe place to install or execute a program, particularly a 
 
 \* Requires further configuration
 
-> [!Important] > **The Unsecure PWA includes the [.codesandbox](.codesandbox), [.devcontainer](.devcontainer) and [.vscode](.vscode) to auto-configure all the above sandboxes.**
+> [!Important]
+> **The Unsecure PWA includes the [.codesandbox](.codesandbox), [.devcontainer](.devcontainer) and [.vscode](.vscode) to auto-configure all the above sandboxes.**
 
 Other Sandbox options:
 
