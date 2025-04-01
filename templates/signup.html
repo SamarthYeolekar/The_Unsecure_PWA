@@ -1,9 +1,32 @@
-{% extends 'layout.html' %}
-{% block content %}
+{% extends 'layout.html' %} {% block content %}
 <h1>Signup Form</h1>
 <form action="/signup.html" method="POST" class="box">
-    {{ csrf_token() }}
-    <div class="input__wrapper">
-        <input type="text" name="username" placeholder="Username" class="input__field">
-    </div>            
-    <div class="input__wrapper
+  {{ csrf_token() }}
+  <div class="input__wrapper">
+    <input
+      type="text"
+      name="username"
+      placeholder="Username"
+      class="input__field"
+      required
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      class="input__field"
+      required
+    />
+    <input
+      type="date"
+      name="dob"
+      placeholder="Date of Birth"
+      class="input__field"
+      required
+    />
+  </div>
+  <div class="input__wrapper">
+    <input type="submit" class="btn" value="Sign Up" />
+  </div>
+</form>
+{% endblock %}
